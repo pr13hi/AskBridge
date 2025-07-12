@@ -1,0 +1,269 @@
+/* Custom styles for StackIt Q&A Forum */
+
+/* Rich Text Editor */
+.rich-text-editor .ql-editor {
+  min-height: 150px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.rich-text-editor .ql-toolbar {
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-radius: 0.375rem 0.375rem 0 0;
+}
+
+.rich-text-editor .ql-container {
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-radius: 0 0 0.375rem 0.375rem;
+}
+
+/* Voting Buttons */
+.voting-buttons {
+  min-width: 60px;
+}
+
+.vote-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.vote-button:hover {
+  transform: scale(1.1);
+}
+
+.vote-count {
+  margin: 0.25rem 0;
+  color: #495057;
+}
+
+/* Global styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+  line-height: 1.6;
+}
+
+/* Question cards */
+.question-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #e9ecef;
+}
+
+.question-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.question-title:hover {
+  color: #0d6efd !important;
+  text-decoration: underline;
+}
+
+.question-description {
+  line-height: 1.5;
+}
+
+.question-stats {
+  min-width: 120px;
+}
+
+.question-stats .badge {
+  font-size: 0.75rem;
+  padding: 0.375rem 0.5rem;
+}
+
+/* Answer cards */
+.answer-card {
+  border-left: 4px solid #0d6efd;
+  transition: border-color 0.2s ease;
+}
+
+.answer-card:hover {
+  border-left-color: #0056b3;
+}
+
+.answer-content {
+  line-height: 1.6;
+}
+
+.answer-content pre {
+  background-color: #f8f9fa !important;
+  border: 1px solid #e9ecef;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.answer-content code {
+  color: #e83e8c;
+  font-family: 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', monospace;
+}
+
+/* Tag badges */
+.tag-badge {
+  font-size: 0.75rem;
+  padding: 0.375rem 0.5rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease;
+}
+
+.tag-badge:hover {
+  background-color: #495057 !important;
+}
+
+/* Form styles */
+.answer-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Cursor pointer for clickable elements */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Navigation improvements */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Loading states */
+.spinner-border {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Button improvements */
+.btn {
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Card improvements */
+.card {
+  border-radius: 0.5rem;
+  border: 1px solid #e9ecef;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .question-stats {
+    margin-top: 1rem;
+    min-width: auto;
+  }
+  
+  .voting-buttons {
+    min-width: 50px;
+  }
+  
+  .vote-button {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .question-card .card-body {
+    padding: 1rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+}
+
+/* Breadcrumb improvements */
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+/* Alert improvements */
+.alert {
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.alert-info {
+  background-color: #e7f3ff;
+  color: #0c5460;
+}
+
+.alert-danger {
+  background-color: #ffe6e6;
+  color: #721c24;
+}
+
+/* Pagination improvements */
+.pagination .page-link {
+  border-radius: 0.375rem;
+  margin: 0 0.125rem;
+  border: 1px solid #dee2e6;
+  color: #6c757d;
+}
+
+.pagination .page-link:hover {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+/* Filter section improvements */
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+/* Question content formatting */
+.question-content {
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+/* Mobile optimizations */
+@media (max-width: 576px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .btn-group-vertical .btn {
+    margin-bottom: 0.5rem;
+  }
+  
+  .tag-badge {
+    margin-bottom: 0.25rem;
+  }
+  
+  .rich-text-editor .ql-editor {
+    min-height: 120px;
+  }
+}
