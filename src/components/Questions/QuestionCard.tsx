@@ -11,7 +11,7 @@ interface QuestionCardProps {
 
 const QuestionCard: React.FC<QuestionCardProps> = ({ question }) => {
   return (
-    <Card className="mb-3 question-card">
+    <Card className="mb-3 question-card style={{ backgroundColor: '#fffcf5' }}">
       <Card.Body>
         <div className="d-flex justify-content-between align-items-start mb-3">
           <div className="flex-grow-1">
@@ -47,13 +47,17 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question }) => {
           <div className="text-end ms-3 question-stats d-flex flex-column align-items-end">
             <div className="d-flex align-items-center mb-2">
               <ChevronUp size={16} className="me-1 text-success" />
-              <span className="badge bg-light text-dark">
+              <span className="badge text-dark" style={{
+                backgroundColor: '#f9c2c4',
+              }}>
                 {question.votes} votes
               </span>
             </div>
             <div className="d-flex align-items-center mb-2">
               <MessageSquare size={16} className="me-1 text-muted" />
-              <span className="badge bg-light text-dark">
+              <span className="badge text-dark" style={{
+                backgroundColor: '#f9c2c4',
+              }}>
                 {question.answer_count} {question.answer_count === 1 ? 'answer' : 'answers'}
               </span>
             </div>
