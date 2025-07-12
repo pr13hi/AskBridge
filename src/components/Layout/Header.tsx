@@ -19,9 +19,13 @@ const Header: React.FC = () => {
     <>
       <Navbar bg="white" expand="lg" className="border-bottom" sticky="top">
         <Container>
-          <Navbar.Brand as={Link} to="/" className="fw-bold text-primary">
-            <MessageSquare className="me-2" size={24} />
-            StackIt
+            <Navbar.Brand as={Link} to="/" className="fw-bold text-primary d-flex align-items-center">
+            <img 
+              src="\AskBridge_logo.png" 
+              alt="AskBridge Logo" 
+              style={{ height: '30px', marginRight: '8px' }} 
+            />
+            AskBridge
           </Navbar.Brand>
           
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
