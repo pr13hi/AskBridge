@@ -1,6 +1,5 @@
 # AskBridge
 Problem Statement:</br>
-</br>
 StackIt – A Minimal Q&A Forum Platform</br>
 </br>
 Overview</br>
